@@ -1,0 +1,118 @@
+:root{
+--img:url("pawan.png");
+}
+
+
+
+body,html{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color:hsl(210, 36%, 96%);
+    margin-top: 10rem;
+}
+
+ .heading h1{
+     color:hsl(209, 61%, 16%);
+     letter-spacing: 2px;
+     font-weight: 700;
+     font-size: 3.5rem;
+ }
+ .heading .underline{
+    margin: auto; 
+    width:100px;
+     height:5px;
+     background-color:hsl(205, 78%, 60%);
+     border-radius: 10px;
+     margin-top:20px;
+    }
+.test-container{
+   margin-top:3rem;
+    padding : 3rem;
+    border-radius:10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width:60%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height:500px;
+    width:700px;
+
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+position: relative;
+}
+.main .image-container{
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+    background-image: var(--img);
+    background-size: 150px;
+    background-position: center;
+    border-right: 10px solid hsl(205, 78%, 60%);
+    background-repeat: no-repeat;
+
+}
+.main h3{
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-top: 1rem;
+}
+.main h4{
+    font-size: 1.3rem;
+    color : hsl(205, 78%, 60%);
+    letter-spacing: 2px;
+ } 
+ .main p{
+     text-align: center;
+     font-size: 1.2rem;
+     color: #666;
+     }
+
+.nex-prev{
+align-self: center;  
+color : hsl(205, 78%, 60%);
+
+}
+.nex-prev i{
+    margin-right:15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+button{
+    align-self: center;
+    margin-top: 2rem;
+    position: relative;
+    right:5px;
+}
+.circ{
+    height:50px;
+    width:50px;
+    background-color: royalblue;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    right:350px;
+}
+@media only screen and (max-width: 700px){
+    .test-container{
+        height:500px;
+        width:400px;
+    }
+    .circ{
+        right:200px;
+    }
+}
